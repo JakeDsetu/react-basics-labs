@@ -43,4 +43,20 @@ div {
 
 .description {
   font-style: italic;
+  font-size: smaller;
+}
+
+.prioritylow {
+  font-weight: bold;
+  color: blue;
+}
+
+.prioritymedium {
+  font-weight: bold;
+  color: yellow;
+}
+
+.priorityhigh {
+  font-weight: bold;
+  color: red;
 }
