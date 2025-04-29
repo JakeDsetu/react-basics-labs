@@ -1,13 +1,13 @@
-export const getTasks = async () => {
+export const getMovies = async () => {
     const  res = await fetch(
-        `http://localhost:8080/api/tasks`
+        `http://localhost:8080/api/movies`
     )
         return res.json();
 };
 
-export const addTask = async(data) => {
+export const addMovie = async(data) => {
     const res = await fetch(
-        `http://localhost:8080/api/tasks`,
+        `http://localhost:8080/api/movies`,
         {
             method: 'POST',
             headers: {
@@ -19,9 +19,9 @@ export const addTask = async(data) => {
         return res.json();
 };
 
-export const deleteTask = async (id) => {
+export const deleteMovie = async (id) => {
     const res =  fetch(
-        `http://localhost:8080/api/tasks/${id}`,
+        `http://localhost:8080/api/movies/${id}`,
         {
             method: 'DELETE'
         }
@@ -29,9 +29,9 @@ export const deleteTask = async (id) => {
     return res;
 };
 
-export const updateTask = async (data) => {
+export const updateMovie = async (data) => {
     const res = await fetch(
-        `http://localhost:8080/api/tasks/${data._id}`,
+        `http://localhost:8080/api/movies/${data._id}`,
         {
             method: 'PUT',
             headers: {
